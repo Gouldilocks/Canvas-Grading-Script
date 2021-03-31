@@ -153,3 +153,22 @@ Blue Dice: 3 6 6 (sum: 0) Red Dice: 2 3 5 (sum: 0)
 
 It took 1 roll(s) to match the sum of the red and blue dice.compiling /home/loggityloglog/Downloads/Data/smithian_55140_4516590_lab
 compiling 
+compiling /home/loggityloglog/Desktop/scripting/Data/mannonrachel_54233_4517854_Lab4-Spring2021/GradeBook.java
+Welcome to the CS Gradebook
+
+How many exams? compiling /home/loggityloglog/Desktop/scripting/Data/mannonrachel_54233_4517854_Lab4-Spring2021/RedBlueDice.java
+Blue Dice: 1 5 1 (sum: 0) Red Dice: 6 2 4 (sum: 0) 
+Blue Dice: 1 5 1 (sum: 0) Red Dice: 6 2 4 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.compiling /home/loggityloglog/Desktop/scripting/Data/smithian_55140_4516590_lab
+compiling 
+compiling /home/loggityloglog/Desktop/scripting/Data/mannonrachel_54233_4517854_Lab4-Spring2021/GradeBook.java
+Welcome to the CS Gradebook
+
+How many exams? How many quizzes? How many lab assignments? Enter exam grade #1: compiling /home/loggityloglog/Desktop/scripting/Data/smithian_55140_4516590_lab
+compiling 
+compiling /home/loggityloglog/Desktop/scripting/Data/mannonrachel_54233_4517854_Lab4-Spring2021/GradeBook.java
+Welcome to the CS Gradebook
+
+How many exams? How many quizzes? How many lab assignments? Enter exam grade #1: compiling /home/loggityloglog/Desktop/scripting/Data/smithian_55140_4516590_lab
+compiling 

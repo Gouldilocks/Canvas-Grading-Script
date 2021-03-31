@@ -12,7 +12,7 @@ for dire in ./Data/*/; do
 		      ***********
 		      ***********"
 		      #script.exp >> output.txt
-		java $(realpath -s $filename) >> output.txt
+		java $(realpath -s $filename) < ass.txt >> output.txt
    
 	done
 done
