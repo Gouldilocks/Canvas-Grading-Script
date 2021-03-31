@@ -1,0 +1,155 @@
+
+running ./Data/dang.java
+This program is running
+running ./Data/deeznuts.java
+This program is running
+running ./Data/fortunate.java
+This program is running
+running ./Data/hacking.java
+This program is running
+running ./Data/unfortunate.java
+This program is running
+running ./Data/
+running ./Data//*.java
+running ./Data/*.java
+running Data/*.java
+running ./Data//*.java
+running ./Data/*.java
+running /home/loggityloglog/Downloads/*.java
+running /home/loggityloglog/Downloads/Data/*.java
+running /home/loggityloglog/Downloads/Data/*.java
+running /home/loggityloglog/Downloads/Data/*.java
+running /home/loggityloglog/Downloads/Data//*.java
+running /home/loggityloglog/Downloads/Data/*.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//GradeBook.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//RedBlueDice.java
+Blue Dice: 1 2 4 (sum: 0) Red Dice: 4 5 6 (sum: 0) 
+Blue Dice: 1 2 4 (sum: 0) Red Dice: 4 5 6 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.running ./Data/smithian_55140_4516590_lab
+running 4//*.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//GradeBook.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//RedBlueDice.java
+Blue Dice: 3 1 3 (sum: 0) Red Dice: 2 4 6 (sum: 0) 
+Blue Dice: 3 1 3 (sum: 0) Red Dice: 2 4 6 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.running ./Data/smithian_55140_4516590_lab
+running 4//*.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//GradeBook.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//RedBlueDice.java
+Blue Dice: 2 1 1 (sum: 0) Red Dice: 5 2 1 (sum: 0) 
+Blue Dice: 2 1 1 (sum: 0) Red Dice: 5 2 1 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.running ./Data/smithian_55140_4516590_lab
+running 4//*.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//GradeBook.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//RedBlueDice.java
+Blue Dice: 1 2 5 (sum: 0) Red Dice: 3 2 5 (sum: 0) 
+Blue Dice: 1 2 5 (sum: 0) Red Dice: 3 2 5 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.running ./Data/smithian_55140_4516590_lab
+running 4//*.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//GradeBook.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//RedBlueDice.java
+Blue Dice: 4 4 4 (sum: 0) Red Dice: 6 4 3 (sum: 0) 
+Blue Dice: 4 4 4 (sum: 0) Red Dice: 6 4 3 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.running ./Data/smithian_55140_4516590_lab
+running 4//*.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//GradeBook.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//RedBlueDice.java
+Blue Dice: 5 4 1 (sum: 0) Red Dice: 2 4 4 (sum: 0) 
+Blue Dice: 5 4 1 (sum: 0) Red Dice: 2 4 4 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.running ./Data/smithian_55140_4516590_lab
+running 4//*.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//GradeBook.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//RedBlueDice.java
+Blue Dice: 5 5 1 (sum: 0) Red Dice: 5 6 4 (sum: 0) 
+Blue Dice: 5 5 1 (sum: 0) Red Dice: 5 6 4 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.running ./Data/smithian_55140_4516590_lab
+running 4//*.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//GradeBook.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//RedBlueDice.java
+Blue Dice: 1 5 5 (sum: 0) Red Dice: 1 1 4 (sum: 0) 
+Blue Dice: 1 5 5 (sum: 0) Red Dice: 1 1 4 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.running ./Data/smithian_55140_4516590_lab
+running 4//*.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//GradeBook.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//RedBlueDice.java
+Blue Dice: 4 6 2 (sum: 0) Red Dice: 4 1 2 (sum: 0) 
+Blue Dice: 4 6 2 (sum: 0) Red Dice: 4 1 2 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.running ./Data/smithian_55140_4516590_lab
+running 4//*.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//GradeBook.java
+running ./Data/mannonrachel_54233_4517854_Lab4-Spring2021//RedBlueDice.java
+Blue Dice: 4 5 5 (sum: 0) Red Dice: 6 4 4 (sum: 0) 
+Blue Dice: 4 5 5 (sum: 0) Red Dice: 6 4 4 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.running ./Data/smithian_55140_4516590_lab
+running 4//*.java
+running /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/GradeBook.java
+running /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/RedBlueDice.java
+Blue Dice: 3 3 1 (sum: 0) Red Dice: 1 6 1 (sum: 0) 
+Blue Dice: 3 3 1 (sum: 0) Red Dice: 1 6 1 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.running /home/loggityloglog/Downloads/Data/smithian_55140_4516590_lab
+running 
+running /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/GradeBook.java
+running /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/RedBlueDice.java
+Blue Dice: 4 5 3 (sum: 0) Red Dice: 1 4 3 (sum: 0) 
+Blue Dice: 4 5 3 (sum: 0) Red Dice: 1 4 3 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.running /home/loggityloglog/Downloads/Data/smithian_55140_4516590_lab
+running 
+compiling /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/GradeBook.java
+compiling /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/RedBlueDice.java
+Blue Dice: 2 4 6 (sum: 0) Red Dice: 1 6 4 (sum: 0) 
+Blue Dice: 2 4 6 (sum: 0) Red Dice: 1 6 4 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.compiling /home/loggityloglog/Downloads/Data/smithian_55140_4516590_lab
+compiling 
+compiling /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/GradeBook.java
+compiling /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/RedBlueDice.java
+Blue Dice: 5 5 6 (sum: 0) Red Dice: 2 6 1 (sum: 0) 
+Blue Dice: 5 5 6 (sum: 0) Red Dice: 2 6 1 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.compiling /home/loggityloglog/Downloads/Data/smithian_55140_4516590_lab
+compiling 
+compiling /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/GradeBook.java
+compiling /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/RedBlueDice.java
+Blue Dice: 5 6 1 (sum: 0) Red Dice: 4 2 2 (sum: 0) 
+Blue Dice: 5 6 1 (sum: 0) Red Dice: 4 2 2 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.compiling /home/loggityloglog/Downloads/Data/smithian_55140_4516590_lab
+compiling 
+compiling /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/GradeBook.java
+compiling /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/RedBlueDice.java
+Blue Dice: 5 5 6 (sum: 0) Red Dice: 5 3 5 (sum: 0) 
+Blue Dice: 5 5 6 (sum: 0) Red Dice: 5 3 5 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.compiling /home/loggityloglog/Downloads/Data/smithian_55140_4516590_lab
+compiling 
+compiling /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/GradeBook.java
+Welcome to the CS GradeBook
+How many exams? How many quizzes? How many labs? compiling /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/RedBlueDice.java
+Blue Dice: 1 2 1 (sum: 0) Red Dice: 3 4 6 (sum: 0) 
+Blue Dice: 1 2 1 (sum: 0) Red Dice: 3 4 6 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.compiling /home/loggityloglog/Downloads/Data/smithian_55140_4516590_lab
+compiling 
+compiling /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/GradeBook.java
+Welcome to the CS Gradebook
+
+How many exams? How many quizzes? How many lab assignments? Enter exam grade #1: Enter quiz grade #1: Enter quiz grade #2: Enter lab grade #1: Enter lab grade #2: Enter lab grade #3: Exam average:  3.00
+Quiz average:  3.00
+Lab average:  3.33
+compiling /home/loggityloglog/Downloads/Data/mannonrachel_54233_4517854_Lab4-Spring2021/RedBlueDice.java
+Blue Dice: 3 6 6 (sum: 0) Red Dice: 2 3 5 (sum: 0) 
+Blue Dice: 3 6 6 (sum: 0) Red Dice: 2 3 5 (sum: 0) 
+
+It took 1 roll(s) to match the sum of the red and blue dice.compiling /home/loggityloglog/Downloads/Data/smithian_55140_4516590_lab
+compiling 
