@@ -41,9 +41,9 @@ if {$force_conservative} {
 #
 # -Don
 
-
+set filename [lindex $argv 0]
 set timeout -1
-spawn java GradeBook
+spawn java $filename
 match_max 100000
 sleep .1
 send -- "3\r"
