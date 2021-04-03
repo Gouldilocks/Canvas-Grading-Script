@@ -59,7 +59,7 @@ sleep .1
 send -- "Lucy\r"
 sleep .1
 set NUM 0
-while { $NUM <= 1000 } {
+while { $NUM <= 10 } {
 send -- "h\r"
 sleep .1
 send -- "l\r"
@@ -80,7 +80,7 @@ send -- "l\r"
 sleep .1
 send -- "h\r"
 
-set NUM [myfunc $NUM]]
+set NUM [myfunc $NUM]
 
 }
 expect eof
