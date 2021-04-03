@@ -6,7 +6,7 @@
 
 The two dependencies for this script are bash and expect.
 
-### For mac users, go into a terminal and type:
+#### For mac users, go into a terminal and type:
 ```
 brew install bash
 ```
