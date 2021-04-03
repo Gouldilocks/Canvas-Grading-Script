@@ -2,6 +2,29 @@
 
 ## So, How do I use this?
 
+### Setting up dependencies
+
+The two dependencies for this script are bash and expect.
+
+### For mac users, go into a terminal and type:
+```
+brew install bash
+```
+and
+```
+brew install expect
+```
+
+#### as for linux:
+
+```
+sudo apt-get install expect
+```
+and
+```
+sudo apt install bash
+```
+
 ### Getting the Student's files
 
 Firstly, you must download all students folders with their projects and unzip the folders with their java programs.
