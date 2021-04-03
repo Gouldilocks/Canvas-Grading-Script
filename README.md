@@ -44,7 +44,3 @@ Each output for each student is put into their respective directory. Here is an 
 
 ./Data/LastnameFirstname_1234567/output.txt
 
-You will notice that at the bottom of the text file there is a lot of unnecessary 'l's and 'h's, which is because I have the expect
-
-script run 100 of them, in order to confirm that the game would have ended. simply scroll up and you have your output!
-
