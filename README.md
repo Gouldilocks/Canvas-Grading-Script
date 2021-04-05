@@ -27,7 +27,7 @@ sudo apt install bash
 
 ### Getting the Student's files
 
-Firstly, you must download all students folders with their projects and unzip the folders with their java programs.
+Firstly, you must download all students folders with their projects and unzip the folders with their java programs. (support for auto-unzipping coming soon)
 
 Some students tend to put their java files within subdirectories within their zipped folders, so you must fix that.
 
