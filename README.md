@@ -9,9 +9,11 @@ The two dependencies for this script are bash and expect.
 #### For mac users, go into a terminal and type:
 ```
 brew install bash
-
+```
+```
 brew install expect
-
+```
+```
 brew install unzip
 ```
 
@@ -19,9 +21,11 @@ brew install unzip
 
 ```
 sudo apt-get install expect
-
+```
+```
 sudo apt install bash
-
+```
+```
 sudo apt-get install unzip
 ```
 
