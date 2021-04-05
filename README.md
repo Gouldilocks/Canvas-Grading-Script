@@ -9,20 +9,20 @@ The two dependencies for this script are bash and expect.
 #### For mac users, go into a terminal and type:
 ```
 brew install bash
-```
-and
-```
+
 brew install expect
+
+brew install unzip
 ```
 
 #### as for linux:
 
 ```
 sudo apt-get install expect
-```
-and
-```
+
 sudo apt install bash
+
+sudo apt-get install unzip
 ```
 
 ### Getting the Student's files
