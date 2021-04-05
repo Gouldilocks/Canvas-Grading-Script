@@ -13,8 +13,8 @@ for dire in $(find ./Data/ -mindepth 1 -maxdepth 1 -type d); do
   	echo "cd into $dire"
   	
   	
-  	# loop over all java files
-	for filename in $(ls *.java); do
+  	# loop over all launcher .java file
+	for filename in $(ls *cher.java); do
 	
 		# put name of student to output file
 		echo "compiling $(realpath -s $filename)" >> output.txt
