@@ -114,3 +114,463 @@ l
 l
 l
 h
+compiling /home/christian/Desktop/JavaTASpring2021/scripting/javaScripting/Data/Lastname_Firstname_123456/GameLauncher.java
+spawn java GameLauncher
+Welcome to the Dice Game!
+The first player to get five correct wins.
+
+How many players? 2
+Enter player 1 name: Charlie
+Enter player 2 name: Lucy
+Press Enter/Return to spin the spinner...h
+Spinner value: 3
+
+Charlie's turn. Will your roll be Higher or Lower than 3 (H/L)? l
+Rolled Die(6) Die(4) Sum: 10
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 0 points
+Lucy has 0 points
+
+Lucy's turn. Will your roll be Higher or Lower than 3 (H/L)? l
+Rolled Die(4) Die(6) Sum: 10
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 0 points
+Lucy has 0 points
+
+Charlie's turn. Will your roll be Higher or Lower than 3 (H/L)? l
+Rolled Die(1) Die(4) Sum: 5
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 0 points
+Lucy has 0 points
+
+Lucy's turn. Will your roll be Higher or Lower than 3 (H/L)? l
+Rolled Die(5) Die(3) Sum: 8
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 0 points
+Lucy has 0 points
+
+Charlie's turn. Will your roll be Higher or Lower than 3 (H/L)? h
+Rolled Die(1) Die(6) Sum: 7
+Charlie earned a point!
+SCOREBOARD
+
+Charlie has 1 points
+Lucy has 0 points
+
+Press Enter/Return to spin the spinner...l
+Spinner value: 2
+
+Lucy's turn. Will your roll be Higher or Lower than 2 (H/L)? l
+Rolled Die(4) Die(1) Sum: 5
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 1 points
+Lucy has 0 points
+
+Charlie's turn. Will your roll be Higher or Lower than 2 (H/L)? l
+Rolled Die(3) Die(5) Sum: 8
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 1 points
+Lucy has 0 points
+
+Lucy's turn. Will your roll be Higher or Lower than 2 (H/L)? h
+h
+Rolled Die(2) Die(2) Sum: 4
+Lucy earned a point!
+SCOREBOARD
+
+Charlie has 1 points
+Lucy has 1 points
+
+Press Enter/Return to spin the spinner...l
+Spinner value: 9
+
+Charlie's turn. Will your roll be Higher or Lower than 9 (H/L)? l
+Rolled Die(4) Die(3) Sum: 7
+Charlie earned a point!
+SCOREBOARD
+
+Charlie has 2 points
+Lucy has 1 points
+
+Press Enter/Return to spin the spinner...l
+Spinner value: 2
+
+Lucy's turn. Will your roll be Higher or Lower than 2 (H/L)? l
+Rolled Die(6) Die(5) Sum: 11
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 2 points
+Lucy has 1 points
+
+Charlie's turn. Will your roll be Higher or Lower than 2 (H/L)? h
+Rolled Die(6) Die(3) Sum: 9
+Charlie earned a point!
+SCOREBOARD
+
+Charlie has 3 points
+Lucy has 1 points
+
+Press Enter/Return to spin the spinner...l
+Spinner value: 9
+
+Lucy's turn. Will your roll be Higher or Lower than 9 (H/L)? l
+Rolled Die(4) Die(5) Sum: 9
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 3 points
+Lucy has 1 points
+
+Charlie's turn. Will your roll be Higher or Lower than 9 (H/L)? l
+Rolled Die(5) Die(3) Sum: 8
+Charlie earned a point!
+SCOREBOARD
+
+Charlie has 4 points
+Lucy has 1 points
+
+Press Enter/Return to spin the spinner...h
+h
+Spinner value: 11
+
+Lucy's turn. Will your roll be Higher or Lower than 11 (H/L)? Rolled Die(3) Die(4) Sum: 7
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 4 points
+Lucy has 1 points
+
+Charlie's turn. Will your roll be Higher or Lower than 11 (H/L)? l
+Rolled Die(6) Die(2) Sum: 8
+Charlie earned a point!
+SCOREBOARD
+
+Charlie has 5 points
+Lucy has 1 points
+
+Charlie won with 5 points!
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+compiling /home/christian/Desktop/JavaTASpring2021/scripting/javaScripting/Data/Lastname_Firstname_123456/GameLauncher.java
+spawn java GameLauncher
+Welcome to the Dice Game!
+The first player to get five correct wins.
+
+How many players? 2
+Enter player 1 name: Charlie
+Enter player 2 name: Lucy
+Press Enter/Return to spin the spinner...h
+Spinner value: 8
+
+Charlie's turn. Will your roll be Higher or Lower than 8 (H/L)? l
+Rolled Die(4) Die(2) Sum: 6
+Charlie earned a point!
+SCOREBOARD
+
+Charlie has 1 points
+Lucy has 0 points
+
+Press Enter/Return to spin the spinner...l
+Spinner value: 7
+
+Lucy's turn. Will your roll be Higher or Lower than 7 (H/L)? l
+Rolled Die(3) Die(6) Sum: 9
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 1 points
+Lucy has 0 points
+
+Charlie's turn. Will your roll be Higher or Lower than 7 (H/L)? l
+Rolled Die(3) Die(5) Sum: 8
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 1 points
+Lucy has 0 points
+
+Lucy's turn. Will your roll be Higher or Lower than 7 (H/L)? h
+Rolled Die(2) Die(2) Sum: 4
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 1 points
+Lucy has 0 points
+
+Charlie's turn. Will your roll be Higher or Lower than 7 (H/L)? l
+Rolled Die(2) Die(4) Sum: 6
+Charlie earned a point!
+SCOREBOARD
+
+Charlie has 2 points
+Lucy has 0 points
+
+Press Enter/Return to spin the spinner...l
+Spinner value: 6
+
+Lucy's turn. Will your roll be Higher or Lower than 6 (H/L)? l
+Rolled Die(6) Die(3) Sum: 9
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 2 points
+Lucy has 0 points
+
+Charlie's turn. Will your roll be Higher or Lower than 6 (H/L)? h
+h
+Rolled Die(3) Die(2) Sum: 5
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 2 points
+Lucy has 0 points
+
+Lucy's turn. Will your roll be Higher or Lower than 6 (H/L)? l
+Rolled Die(1) Die(1) Sum: 2
+Lucy earned a point!
+SCOREBOARD
+
+Charlie has 2 points
+Lucy has 1 points
+
+Press Enter/Return to spin the spinner...l
+Spinner value: 12
+
+Charlie's turn. Will your roll be Higher or Lower than 12 (H/L)? l
+Rolled Die(6) Die(2) Sum: 8
+Charlie earned a point!
+SCOREBOARD
+
+Charlie has 3 points
+Lucy has 1 points
+
+Press Enter/Return to spin the spinner...l
+Spinner value: 12
+
+Lucy's turn. Will your roll be Higher or Lower than 12 (H/L)? h
+Rolled Die(2) Die(1) Sum: 3
+No point...next player's turn.
+SCOREBOARD
+
+Charlie has 3 points
+Lucy has 1 points
+
+Charlie's turn. Will your roll be Higher or Lower than 12 (H/L)? l
+Rolled Die(6) Die(1) Sum: 7
+Charlie earned a point!
+SCOREBOARD
+
+Charlie has 4 points
+Lucy has 1 points
+
+Press Enter/Return to spin the spinner...l
+Spinner value: 9
+
+Lucy's turn. Will your roll be Higher or Lower than 9 (H/L)? l
+Rolled Die(1) Die(3) Sum: 4
+Lucy earned a point!
+SCOREBOARD
+
+Charlie has 4 points
+Lucy has 2 points
+
+Press Enter/Return to spin the spinner...h
+h
+Spinner value: 4
+
+Charlie's turn. Will your roll be Higher or Lower than 4 (H/L)? Rolled Die(3) Die(4) Sum: 7
+Charlie earned a point!
+SCOREBOARD
+
+Charlie has 5 points
+Lucy has 2 points
+
+Charlie won with 5 points!
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
+h
+l
+l
+l
+l
+h
+l
+l
+l
+h
