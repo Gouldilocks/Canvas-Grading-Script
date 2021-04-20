@@ -3,7 +3,7 @@
 # loop over all subdirectories
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
-for dire in $(find ./Data/ -mindepth 1 -maxdepth 1 -type d); do
+for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
 
 	# save the home directory in order to access exp script later
 	fullDir=$PWD
@@ -12,7 +12,7 @@ for dire in $(find ./Data/ -mindepth 1 -maxdepth 1 -type d); do
   	cd $(realpath -s $dire)
   	echo "cd into $dire"
   	
-  	
+  	rm *.class
   	# loop over all launcher .java file
 	for filename in $(ls *cher.java); do
 	
