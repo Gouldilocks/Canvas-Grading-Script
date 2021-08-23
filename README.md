@@ -1,4 +1,4 @@
-# Christian's Java Scripting program
+# Christian's Java Grading Script
 
 ## So, How do I use this?
 
