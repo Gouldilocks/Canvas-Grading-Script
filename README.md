@@ -28,6 +28,7 @@ sudo apt install bash
 ```
 sudo apt-get install unzip
 ```
+#### And if you use Windows, you are dead to me. Figure it out with powershell or something.
 
 ### Getting the Student's files
 
