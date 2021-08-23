@@ -30,15 +30,11 @@ sudo apt-get install unzip
 ```
 #### And if you use Windows, you are dead to me. Figure it out with powershell or something.
 
-### Getting the Student's files
+### Getting the Student's files and setting up the script environment
 
-Now that support for the unzipping of files has been added, all you must do is copy the .zip folders of the students you wish to grade into a folder labeled "Data"
+Within your folder where you download this repository, you should create a folder, and name it "Data".
 
-### Setting up the directory paths
-
-Now within your folder where you download this repository, you should create a folder, and name it "Data".
-
-Inside this folder, you should put each of the .zip files where each of the students projects are.
+Now that support for the unzipping of files has been added, all you must do is copy the .zip folders of the students you wish to grade into the folder labeled "Data"
 
 ### giving the scripts permissions to run
 
