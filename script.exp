@@ -52,35 +52,40 @@ set timeout 60
 spawn java $filename
 match_max 100000
 sleep .1
+send -- "1\r"
+sleep .1
+send -- "1\r"
+sleep .1
 send -- "2\r"
 sleep .1
-send -- "Charlie\r"
+send -- "3\r"
 sleep .1
-send -- "Lucy\r"
+send -- "4\r"
 sleep .1
-set NUM 0
-while { $NUM <= 10 } {
-send -- "h\r"
-sleep .1
-send -- "l\r"
-sleep .1
-send -- "l\r"
-sleep .1
-send -- "l\r"
-sleep .1
-send -- "l\r"
-sleep .1
-send -- "h\r"
-sleep .1
-send -- "l\r"
-sleep .1
-send -- "l\r"
-sleep .1
-send -- "l\r"
-sleep .1
-send -- "h\r"
-
-set NUM [myfunc $NUM]
-
-}
+send -- "9\r"
+#set NUM 0
+#while { $NUM <= 10 } {
+#send -- "h\r"
+#sleep .1
+#send -- "l\r"
+#sleep .1
+#send -- "l\r"
+#sleep .1
+#send -- "l\r"
+#sleep .1
+#send -- "l\r"
+#sleep .1
+#send -- "h\r"
+#sleep .1
+#send -- "l\r"
+#sleep .1
+#send -- "l\r"
+#sleep .1
+#send -- "l\r"
+#sleep .1
+#send -- "h\r"
+#
+#set NUM [myfunc $NUM]
+#
+#}
 expect eof
