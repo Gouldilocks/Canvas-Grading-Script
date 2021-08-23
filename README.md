@@ -1,10 +1,10 @@
-# Christian's Java Scripting program
+# Christian's Java Grading Script
 
 ## So, How do I use this?
 
 ### Setting up dependencies
 
-The three dependencies for this script are bash, expect, and unzip.
+The three dependencies for this script are bash, expect, and unzip. To be added is support for .rar files, but that will be in a future update, as very few students use .rar files
 
 #### For mac users, go into a terminal and type:
 ```
@@ -18,37 +18,23 @@ brew install unzip
 ```
 
 #### as for linux:
-
-```
-sudo apt-get install expect
-```
 ```
 sudo apt install bash
 ```
 ```
+sudo apt-get install expect
+```
+```
 sudo apt-get install unzip
 ```
+
 #### And if you use Windows, you are dead to me. Figure it out with powershell or something.
 
-### Getting the Student's files
+### Getting the Student's files and setting up the script environment
 
-Firstly, you must download all students folders with their projects and unzip the folders with their java programs. (support for auto-unzipping coming soon)
+Within your folder where you download this repository, you should create a folder, and name it "Data".
 
-Some students tend to put their java files within subdirectories within their zipped folders, so you must fix that.
-
-the folders for each student should end up somewhat like this if they follow the correct protocol: LastnameFirstname_1234567 or something along those lines.
-
-and inside that folder should be their .java and .class files. The .class files are not necessary, as this script compiles regardless due to possible java version mismatch
-
-### Setting up the directory paths
-
-Now within your folder where you download this repository, you should create a folder, and name it "Data".
-
-Inside this folder, you should put each of the directories where each of the students .java files are.
-
-The path to each .java file should look something like this: ./Data/LastnameFirstname_1234567/runme.java
-
-I have added an example "Data" directory for reference
+Now that support for the unzipping of files has been added, all you must do is copy the .zip folders of the students you wish to grade into the folder labeled "Data"
 
 ### giving the scripts permissions to run
 
