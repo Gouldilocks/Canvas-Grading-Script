@@ -4,7 +4,7 @@
 
 ### Setting up dependencies
 
-The two dependencies for this script are bash and expect.
+The three dependencies for this script are bash, expect, and unzip.
 
 #### For mac users, go into a terminal and type:
 ```
