@@ -18,16 +18,16 @@ brew install unzip
 ```
 
 #### as for linux:
-
-```
-sudo apt-get install expect
-```
 ```
 sudo apt install bash
 ```
 ```
+sudo apt-get install expect
+```
+```
 sudo apt-get install unzip
 ```
+
 #### And if you use Windows, you are dead to me. Figure it out with powershell or something.
 
 ### Getting the Student's files and setting up the script environment
