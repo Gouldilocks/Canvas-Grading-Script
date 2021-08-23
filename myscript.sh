@@ -1,8 +1,27 @@
 #!/bin/bash
-
-# loop over all subdirectories
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
+pushd ./Data/
+	for zip in *.zip
+	do
+	  dirname=`echo $zip | sed 's/\.zip$//'`
+	  if mkdir "$dirname"
+	  then
+	    if cd "$dirname"
+	    then
+	      unzip ../"$zip"
+	      cd ..
+	      rm -f $zip # Uncomment to delete the original zip file
+	    else
+	      echo "Could not unpack $zip - cd failed"
+	    fi
+	  else
+	    echo "Could not unpack $zip - mkdir failed"
+	  fi
+	done		
+popd
+
+# loop over all subdirectories
 for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
 
 	# save the home directory in order to access exp script later
@@ -14,7 +33,7 @@ for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
   	
   	rm *.class
   	# loop over all launcher .java file
-	for filename in $(ls *cher.java); do
+	for filename in $(ls *.java); do
 	
 		# put name of student to output file
 		echo "compiling $(realpath -s $filename)" >> output.txt
