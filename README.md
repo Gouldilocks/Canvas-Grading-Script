@@ -16,6 +16,9 @@ brew install expect
 ```
 brew install unzip
 ```
+```
+brew install unrar
+```
 
 #### as for linux:
 ```
@@ -26,6 +29,9 @@ sudo apt-get install expect
 ```
 ```
 sudo apt-get install unzip
+```
+```
+sudo apt install unrar
 ```
 
 #### And if you use Windows, you are dead to me. Figure it out with powershell or something.
