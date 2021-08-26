@@ -4,7 +4,7 @@
 
 ### Setting up dependencies
 
-The three dependencies for this script are bash, expect, and unzip. To be added is support for .rar files, but that will be in a future update, as very few students use .rar files
+The three dependencies for this script are bash, expect, unzip, and unrar.
 
 #### For mac users, go into a terminal and type:
 ```
