@@ -27,7 +27,35 @@ pushd ./Data/
 	    # error message for making a new directory
 	    echo "Could not unpack $zip - mkdir failed"
 	  fi
-	done	
+	done
+	
+	# do the same for .rar files
+	# for all .zip files in the current directory
+	for rar in *.rar
+	do
+	  # set the directory name to be used
+	  dirname=`echo $rar | sed 's/\.rar$//'`
+	  # make the directory with the proper name if possible
+	  if mkdir "$dirname"
+	  then
+	    # change directories to the new directory where the files will be unzipped into
+	    if cd "$dirname"
+	    then
+	      # unzip the file and then leave the directory it zips to
+	      unrar e ../"$rar"
+	      cd ..
+	      # delete the old .zip file just to save space on user's computer
+	      rm -f $rar
+	    else
+	      # error message for unzipping file
+	      echo "Could not unpack $rar - cd failed"
+	    fi
+	  else
+	    # error message for making a new directory
+	    echo "Could not unpack $rar - mkdir failed"
+	  fi
+	done
+		
 # pop ./Data/ off the directory stack
 popd
 
