@@ -40,7 +40,7 @@ sudo apt install unrar
 
 Within your folder where you download this repository, you should create a folder, and name it "Data".
 
-Now that support for the unzipping of files has been added, all you must do is copy the .zip folders of the students you wish to grade into the folder labeled "Data"
+Since support for the unzipping / unraring of files has been added, all you must do is copy the .zip and .rar files of the students you wish to grade into the folder labeled "Data"
 
 ### giving the scripts permissions to run
 
@@ -60,7 +60,7 @@ Now, to run the script, simply execute:
 
 ## How to get the output?
 
-outputs are put in a text file named output.txt.
+outputs are sent to a text file named output.txt.
 
 Each output for each student is put into their respective directory. Here is an example path:
 
