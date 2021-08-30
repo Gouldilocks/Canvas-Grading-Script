@@ -1,8 +1,10 @@
 #!/bin/bash
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
+# save the home directory in order to access exp script later
+fullDir=$PWD
 # use the directory stack to get to ./Data/
-pushd ./Data/
+cd ./Data/
 	# for all .zip files in the current directory
 	for zip in *.zip
 	do
@@ -57,23 +59,33 @@ pushd ./Data/
 	done
 		
 # pop ./Data/ off the directory stack
-popd
+cd ..
 
 # loop over all subdirectories
 for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
-
-	# save the home directory in order to access exp script later
-	fullDir=$PWD
 	
 	# cd into the student's directory
-  	cd $(realpath -s $dire)
+  	if cd "$(realpath -s $dire)"; then
   	echo "cd into $dire"
   	
-  	rm *.class
+  	#support for crap mac zipped folder directories
+  	# removes useless __MACOSX folder, and then pulls the .java files out of the actual folder.
+	  	rm -rf $(realpath -s ./__MACOSX/)
+	  	echo "CURRDIR: ++++++++++++++++++++++++++++++++++"
+	  	echo $PWD
+	  	if cd */; then
+	  		for javafile in ./*.java; do
+	  		mv $javafile ..
+	  		done
+	  		cd ..
+	  		rm -rf ./*/
+	  	fi	
+  	
   	# loop over all launcher .java file
 	for filename in $(ls *.java); do
 	
-		# put name of student to output file
+		# put name of student to output file and terminal
+		echo "compiling $(realpath -s $filename)"
 		echo "compiling $(realpath -s $filename)" >> output.txt
 		
 		# compile java program
@@ -92,6 +104,7 @@ for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
 	# get out of the subdirectory and go back to home directory
 	cd ..
 	cd ..
+	fi
 done # end outer for loop
 
 	
