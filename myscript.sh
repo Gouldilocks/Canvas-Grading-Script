@@ -71,8 +71,6 @@ for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
   	#support for crap mac zipped folder directories
   	# removes useless __MACOSX folder, and then pulls the .java files out of the actual folder.
 	  	rm -rf $(realpath -s ./__MACOSX/)
-	  	echo "inferior operating system garbage detected. Fixing its problems."
-	  	echo $PWD
 	  	if cd */; then
 	  		for javafile in ./*.java; do
 	  		mv $javafile ..
