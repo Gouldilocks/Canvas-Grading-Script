@@ -67,7 +67,7 @@ for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
 	# cd into the student's directory
   	if cd "$(realpath -s $dire)"; then
   	echo "cd into $dire"
-  	
+	
   	#support for crap mac zipped folder directories
   	# removes useless __MACOSX folder, and then pulls the .java files out of the actual folder.
 	  	rm -rf $(realpath -s ./__MACOSX/)
@@ -81,7 +81,7 @@ for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
   	
   	# loop over all launcher .java file
 	for filename in $(ls *.java); do
-	
+
 		# put name of student to output file and terminal
 		echo "compiling $(realpath -s $filename)"
 		echo "compiling $(realpath -s $filename)" >> output.txt
@@ -91,7 +91,7 @@ for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
 		
 		# print to console which student program is running
 		echo "RUNNING $dire"
-		
+
 			# remove all exterior except class name (i.e. turn "./Grade.java" to "Grade")
 			y=${filename%.java}  
 			# run the expect script and output to file in subdirectory
