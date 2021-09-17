@@ -1,0 +1,54 @@
+#!/usr/bin/expect -f
+set force_conservative 0  ;# set to 1 to force conservative mode even if
+			  ;# script wasn't run conservatively originally
+if {$force_conservative} {
+	set send_slow {1 .1}
+	proc send {ignore arg} {
+		sleep .1
+		exp_send -s -- $arg
+	}
+}
+proc myfunc { TOTAL } {
+	
+	set TOTAL [expr $TOTAL + 1]
+	
+	return "$TOTAL"
+
+}
+set filename [lindex $argv 0]
+set timeout 60
+spawn java $filename
+match_max 100000
+sleep .1
+send -- "45\r"
+sleep .1
+send -- "10\r"
+sleep .1
+send -- "40\r"
+sleep .1
+send -- "5\r"
+
+sleep .1
+send -- "100\r"
+sleep .1
+send -- "100\r"
+sleep .1
+send -- "90\r"
+
+sleep .1
+send -- "100\r"
+sleep .1
+send -- "50\r"
+sleep .1
+send -- "95\r"
+
+sleep .1
+send -- "83\r"
+sleep .1
+send -- "92\r"
+sleep .1
+send -- "95\r"
+
+sleep .1
+send -- "80\r"
+expect eof
