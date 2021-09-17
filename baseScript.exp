@@ -16,7 +16,7 @@ proc myfunc { TOTAL } {
 
 }
 set filename [lindex $argv 0]
-set timeout 60
+set timeout 5
 spawn java $filename
 match_max 100000
 sleep .1
