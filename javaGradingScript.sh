@@ -91,11 +91,22 @@ for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
 		
 		# print to console which student program is running
 		echo "RUNNING $dire"
-
-			# remove all exterior except class name (i.e. turn "./Grade.java" to "Grade")
-			y=${filename%.java}  
+		
+			# remove all exterior except class name (i.e. turn "./Grade.java" to "Grade" so that the java file can be run properly)
+			y=${filename%.java}
 			# run the expect script and output to file in subdirectory
-			$fullDir/script.exp $y >> output.txt 
+			echo "------------------------------" >> output.txt
+			echo "Running Driving Cost expect: " >> output.txt
+			echo "------------------------------" >> output.txt
+			$fullDir/drivingcost.exp $y >> output.txt
+			echo "------------------------------" >> output.txt
+			echo "Running Grade Calculator expect: " >> output.txt
+			echo "------------------------------" >> output.txt
+			$fullDir/gradecalculator.exp $y >> output.txt 
+			echo "------------------------------" >> output.txt
+			echo "Running Rule of 72 expect: " >> output.txt
+			echo "------------------------------" >> output.txt
+			$fullDir/ruleof72.exp $y >> output.txt
 			
 	done # end inner for loop
 	

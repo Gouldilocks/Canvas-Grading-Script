@@ -1,5 +1,12 @@
 # Christian's Java Grading Script
 
+## Recent Updates
+The most recent update adds support for Lab 2 for the fall semester.
+
+The thing to look out for is that, because students will change the .java file names, there can be no assumptions made.
+
+This means that all of the expect scripts are run on all of the java files. It should be easy to decipher which one is meant to be done, so just look for the one valid output in "output.txt". There will be 12 different outputs all put to the same output.txt, and 3 will be valid, assuming the student coded it correctly.
+
 ## So, How do I use this?
 
 ### Setting up dependencies
