@@ -53,16 +53,18 @@ Since support for the unzipping / unraring of files has been added, all you must
 
 Now, in order to run any bash and expect scripts, you must give your computer permission to run them. This is for security purposes, and I promise I'm not giving you malware :)
 
-to do this, run these commands while in the directory where you downloaded this repo:
+to do this, run these commands while in the repo's directory:
 
 ```
-chmod +x ./myscript.sh
-chmod +x ./script.exp
+chmod +x ./drivingcost.exp
+chmod +x ./gradecalculator.exp
+chmod +x ./ruleof72.exp
+chmod +x ./javaGradingScript.sh
 ```
 
 Now, to run the script, simply execute:
 ```
-./myscript.sh
+./javaGradingScript.sh
 ```
 
 ## How to get the output?
