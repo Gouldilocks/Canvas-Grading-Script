@@ -35,10 +35,10 @@ sleep .1
 send -- "4\r"
 sleep .1
 # choose option 5 (display balance)
-send --"5\r"
+send -- "5\r"
 sleep .1
 # choose option 1
-send --"1\r"
+send -- "1\r"
 sleep .1
 # buy 1000 servers (should be too many)
 send -- "1000\r"

@@ -62,7 +62,9 @@ cd ./Data/
 cd ..
 
 # loop over all subdirectories
-for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
+#for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
+cd ./Data/
+for dire in $(ls); do
 	
 	# cd into the student's directory
   	if cd "$(realpath -s $dire)"; then
@@ -95,7 +97,7 @@ for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
 			# remove all exterior except class name (i.e. turn "./Grade.java" to "Grade"
 			y=${filename%.java}
 			# run the expect script and output to file in subdirectory
-			echo "------------------------------" >> output.txt
+			echo "------------------------------" >> $y_output.txt
 			echo "Running expect on $y: " >> output.txt
 			echo "------------------------------" >> output.txt
 			$fullDir/security.exp $y >> output.txt
