@@ -3,6 +3,10 @@ SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 # save the home directory in order to access exp script later
 fullDir=$PWD
+
+# call the python canvas puller
+python3 canvasStudentSubmissionPuller.py
+
 # use the directory stack to get to ./Data/
 cd ./Data/
 	# for all .zip files in the current directory
