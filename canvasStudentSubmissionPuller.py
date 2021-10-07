@@ -38,6 +38,8 @@ students = [
 'Rich Wooten'
 ]
  
+assignmentToGrade = 'Lab 3'
+
 # Create a canvas object
 canvas = Canvas(API_URL, API_KEY)
  
@@ -54,7 +56,7 @@ for course in courses:
    assignmentID = str(assignment)[assignmentIndex+1: assignmentIndex + 6]
    assignmentNAME = str(assignment)[0:assignmentIndex-1]
  
-   if assignmentNAME == 'Lab 3':
+   if assignmentNAME == assignmentToGrade:
      submissions = assignment.get_submissions()
      for submission in submissions:
        for user in users:
