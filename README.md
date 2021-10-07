@@ -1,6 +1,25 @@
 # Christian's Java Grading Script
 
 ## Recent Updates
+OCTOBER 7, 2021
+
+### UPDATE VER 2.0
+Currently, the update for canvas api integration has been added. This is how to use it:
+- You must get an api key from your canvas page. 
+- Click your icon on your home page
+- Go to settings
+- Scroll down to approved integrations
+- Click add a new access token
+- Give it a purpose / expiration date
+- Hit generate and copy the token to your clipboard
+- Now enter the directory where you store javaGradingScript.sh
+- Create a .txt file named: "apiKey.txt"
+- Go into canvasStudentSubmissionPuller.py and edit the student names to be the names of your student
+- edit assignmentToGrade to be the assignment you would like to grade
+- now run the script and wait.
+- NOTE: there is not edge-case support for students that do not follow the format of putting all their .java files into a SINGLE zipped folder. That will come soon.
+
+SEPTEMBER
 The most recent update adds support for Lab 2 for the fall semester.
 
 The thing to look out for is that, because students will change the .java file names, there can be no assumptions made.
