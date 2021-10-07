@@ -66,51 +66,49 @@ cd ./Data/
 cd ..
 
 # loop over all subdirectories
-#for dire in $(find ./Data*/ -mindepth 1 -maxdepth 1 -type d); do
-cd ./Data/
-for dire in $(ls); do
+for dire in $(find ./Data/ -mindepth 1 -maxdepth 1 -type d); do
 	
 	# cd into the student's directory
   	if cd "$(realpath -s $dire)"; then
-  	echo "cd into $dire"
-	
-  	#support for crap mac zipped folder directories
-  	# removes useless __MACOSX folder, and then pulls the .java files out of the actual folder.
-	  	rm -rf $(realpath -s ./__MACOSX/)
-	  	if cd */; then
-	  		for javafile in ./*.java; do
-	  		mv $javafile ..
-	  		done
-	  		cd ..
-	  		rm -rf ./*/
-	  	fi	
-  	
-  	# loop over all launcher .java file
-	for filename in $(ls *.java); do
-
-		# put name of student to output file and terminal
-		echo "compiling $(realpath -s $filename)"
-		echo "compiling $(realpath -s $filename)" >> output.txt
+			echo "cd into $dire"
 		
-		# compile java program
-		javac $(realpath -s $filename)
-		
-		# print to console which student program is running
-		echo "RUNNING $dire"
-		
-			# remove all exterior except class name (i.e. turn "./Grade.java" to "Grade"
-			y=${filename%.java}
-			# run the expect script and output to file in subdirectory
-			echo "------------------------------" >> $y_output.txt
-			echo "Running expect on $y: " >> output.txt
-			echo "------------------------------" >> output.txt
-			$fullDir/security.exp $y >> output.txt
+			#support for crap mac zipped folder directories
+			# removes useless __MACOSX folder, and then pulls the .java files out of the actual folder.
+				rm -rf $(realpath -s ./__MACOSX/)
+				if cd */; then
+					for javafile in ./*.java; do
+					mv $javafile ..
+					done
+					cd ..
+					rm -rf ./*/
+				fi	
 			
-	done # end inner for loop
-	
-	# get out of the subdirectory and go back to home directory
-	cd ..
-	cd ..
+			# loop over all launcher .java file
+		for filename in $(ls *.java); do
+
+			# put name of student to output file and terminal
+			echo "compiling $(realpath -s $filename)"
+			echo "compiling $(realpath -s $filename)" >> output.txt
+			
+			# compile java program
+			javac $(realpath -s $filename)
+			
+			# print to console which student program is running
+			echo "RUNNING $dire"
+			
+				# remove all exterior except class name (i.e. turn "./Grade.java" to "Grade"
+				y=${filename%.java}
+				# run the expect script and output to file in subdirectory
+				echo "------------------------------" >> output.txt
+				echo "Running expect on $y: " >> output.txt
+				echo "------------------------------" >> output.txt
+				$fullDir/security.exp $y >> output.txt
+				
+		done # end inner for loop
+		
+		# get out of the subdirectory and go back to home directory
+		cd ..
+		cd ..
 	fi
 done # end outer for loop
 
