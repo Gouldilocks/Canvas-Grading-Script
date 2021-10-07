@@ -9,7 +9,6 @@ import os
 API_URL = 'https://smu.instructure.com/'
 
 keyfile = open('apiKey.txt', 'r')
-
 API_KEY = keyfile.readline()
 
 logfile = open("logs.txt", "w")
