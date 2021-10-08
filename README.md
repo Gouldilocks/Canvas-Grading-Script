@@ -4,7 +4,8 @@
 OCTOBER 7, 2021
 
 ### UPDATE VER 2.0
-Currently, the update for canvas api integration has been added. This is how to use it:
+Currently, the update for canvas api integration has been added. If you choose not to use it, then ignore this and use the script like usual.
+This is how to use the new update:
 - You must get an api key from your canvas page. 
 - Click your icon on your home page
 - Go to settings
@@ -18,6 +19,14 @@ Currently, the update for canvas api integration has been added. This is how to 
 - edit assignmentToGrade to be the assignment you would like to grade
 - now run the script and wait.
 - NOTE: there is not edge-case support for students that do not follow the format of putting all their .java files into a SINGLE zipped folder. That will come soon.
+
+New dependencies for the script are for python if you choose to use the canvas api portion. To install them, use these commands:
+```
+pip install wget
+```
+```
+pip install canvasapi
+```
 
 SEPTEMBER
 The most recent update adds support for Lab 2 for the fall semester.
