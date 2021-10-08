@@ -17,34 +17,25 @@ logfile.write("Starting Script Now")
 if not os.path.isdir('./Data'):
  os.mkdir('./Data')
  
+assignmentids = open("dontEditMe.txt", "w")
+
+students = []
  # Change student names here. Names must be capitalized first and last with space betweein like so:
-students = [
-'Parker Benton',
-'akiya Caldwell',
-'Eric Ciocan',
-'Truman Dolder',
-'Will Epperly',
-'Will Goodgame',
-'Kevin Guo',
-'Ben Hobin',
-'Chase Jessup',
-'Nick Kaisand',
-'Katie Laird',
-'Marissa Lenz',
-'Alex Petmecky',
-'Barrett Purvis',
-'Andrea Reyes',
-'Jamie Turner',
-'Rich Wooten'
-]
- 
+studentFile = open('students.txt', 'r')
+for line in studentFile:
+  line = line.rstrip('\n')
+  students.append(line)
+print("grading these students:")
+print("-----------------------")
+for i in students:
+  print(i)
 assignmentToGrade = 'Lab 3'
 
 # Create a canvas object
 canvas = Canvas(API_URL, API_KEY)
  
 # Create a user object
-account = canvas.get_user(44819)
+account = canvas.get_current_user()
  
 # Print out all the users
 courses =  [canvas.get_course(88098),canvas.get_course(88136),canvas.get_course(88117),canvas.get_course(88140)]
@@ -57,6 +48,7 @@ for course in courses:
    assignmentNAME = str(assignment)[0:assignmentIndex-1]
  
    if assignmentNAME == assignmentToGrade:
+     assignmentids.write(str(assignment.id) + "\n")
      submissions = assignment.get_submissions()
      for submission in submissions:
        for user in users:
@@ -64,6 +56,7 @@ for course in courses:
          if user.id == submission.user_id:
            # If it is a student that I grade
            if user.name in students:
+             assignmentids.write(str(user.id) + "\n")
              logfile.write("student name: " + str(user.name) + "\n")
              print("user id: " + str(submission.user_id))
              print("student name: " + str(user.name))
@@ -97,6 +90,6 @@ for course in courses:
                print(e)
                # If the student has no submission
                logfile.write("There were no submissions found for " + str(user.name) + "\n")
-               print("there were no submissions found")
-               pass
-    
+               print("there were no submissions found") 
+ assignmentids.write("*\n")
+
