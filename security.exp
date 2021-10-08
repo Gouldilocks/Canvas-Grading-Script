@@ -43,6 +43,9 @@ sleep .1
 # buy 1000 servers (should be too many)
 send -- "1000\r"
 sleep .1
+# choose option 2
+send -- "2\r"
+sleep .1
 # sell 1000 licences (should be too many)
 send -- "1000\r"
 sleep .1

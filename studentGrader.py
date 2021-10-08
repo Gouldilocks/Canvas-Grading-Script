@@ -12,6 +12,7 @@ assignmentFile = open('dontEditMe.txt','r')
 
 courses = [canvas.get_course(88098),canvas.get_course(88136),canvas.get_course(88117),canvas.get_course(88140)]
 # Get an assignment
+studentName = None
 for course in courses: # loop over all 4 assignments from the 4 classes
   assignment = course.get_assignment(int(assignmentFile.readline()))
   print("assignment is: " + str(assignment))
@@ -22,11 +23,13 @@ for course in courses: # loop over all 4 assignments from the 4 classes
         else:
           submission = assignment.get_submission(line) # get the submission of the student id specified
           users = course.get_users(enrollment_type=['student'])
-          studentName = None
           for x in users:
             if x.id == int(line):
               studentName = x.name
           # Print the student's output
+          if submission.score is not None:
+            print(studentName + "'s Project has already been graded. Skipping.")
+            continue
           filepath = './Data/' + studentName.replace(" ", "") + '/output.txt'
           try:
             output = open(filepath,'r')
@@ -50,7 +53,7 @@ for course in courses: # loop over all 4 assignments from the 4 classes
               commentFile.close()
               submission.upload_comment('comment.txt')
           except:
-            print("student output was not found.")
+            print("student output was not found for " + studentName)
 
 # Student setup
 students = []

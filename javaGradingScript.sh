@@ -4,6 +4,9 @@ IFS=$(echo -en "\n\b")
 # save the home directory in order to access exp script later
 fullDir=$PWD
 
+# If you would not like to use the canvas portion, delete this line.
+sudo rm -r ./Data/
+
 # call the python canvas puller
 python3 canvasStudentSubmissionPuller.py
 
@@ -66,8 +69,8 @@ cd ./Data/
 cd ..
 
 # loop over all subdirectories
-for dire in $(find ./Data/ -mindepth 1 -maxdepth 1 -type d); do
-	
+#for dire in $(find ./Data/ -mindepth 1 -maxdepth 1 -type d); do
+for dire in ./Data/*/; do
 	# cd into the student's directory
   	if cd "$(realpath -s $dire)"; then
 			echo "cd into $dire"
@@ -111,5 +114,8 @@ for dire in $(find ./Data/ -mindepth 1 -maxdepth 1 -type d); do
 		cd ..
 	fi
 done # end outer for loop
+
+# Run the student grader console program
+python3 studentGrader.py
 
 	
