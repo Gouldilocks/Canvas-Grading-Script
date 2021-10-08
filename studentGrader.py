@@ -28,12 +28,29 @@ for course in courses: # loop over all 4 assignments from the 4 classes
               studentName = x.name
           # Print the student's output
           filepath = './Data/' + studentName.replace(" ", "") + '/output.txt'
-          output = open(filepath,'r')
-          for l in output:
-            l = l.rstrip('\n')
-            print(l)
-          score = input("What score would you like to give this submission?")
-          submission.edit(submission={'posted_grade':int(score)})
+          try:
+            output = open(filepath,'r')
+            for l in output:
+              l = l.rstrip('\n')
+              print(l)
+            print("You are grading " + studentName)
+            print("current grade is: " + str(submission.score))
+            score = input("What score would you like to give this submission? or type 'skip' to skip grading: ")
+            if score == 'skip':
+              pass
+            else:
+              submission.edit(submission={'posted_grade':int(score)})
+            comment = input("What comment would you like to give? Type 'skip' to skip: ")
+            if comment == 'skip':
+              continue
+            else:
+              fileP = './comment.txt'
+              commentFile = open(fileP,'w')
+              commentFile.write(comment)
+              commentFile.close()
+              submission.upload_comment('comment.txt')
+          except:
+            print("student output was not found.")
 
 # Student setup
 students = []
