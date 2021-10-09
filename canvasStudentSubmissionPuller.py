@@ -1,10 +1,22 @@
 from canvasapi import Canvas, account
-import requests
-import urllib.request;
 import wget
-import json
 from types import SimpleNamespace
 import os
+import zipfile
+import shutil
+
+
+def unzipAllFiles(dir_name,extension):
+  print(os.listdir(dir_name))
+  for item in os.listdir(dir_name): # loop through items in dir
+    if item.endswith(extension): # check for ".zip" extension
+        file_name = dir_name + '/' + item # get full path of files
+        print("file name is: " + file_name)
+        zip_ref = zipfile.ZipFile(file_name) # create zipfile object
+        zip_ref.extractall(dir_name) # extract file to dir
+        zip_ref.close() # close file
+        os.remove(file_name) # delete zipped file
+
 # set the canvas url and key
 API_URL = 'https://smu.instructure.com/'
 
@@ -75,7 +87,7 @@ for course in courses:
                      print("url: " + url)
                      wget.download(url, filepath)
                else:
-                 filepath = './Data/' + user.name.replace(" ", "") + 'TOO_MANY_FILES'
+                 filepath = './Data/' + user.name.replace(" ", "")
                  if not os.path.isdir(filepath):
                    os.mkdir(filepath)
                    for item in submission.attachments:
@@ -85,6 +97,9 @@ for course in courses:
                      logfile.write("url: " + url + "\n")
                      print("url: " + url)
                      wget.download(url, filepath)
+                 unzipAllFiles(filepath,'.zip')
+                 shutil.make_archive(user.name.replace(" ", ""), 'zip', filepath)
+
  
              except Exception as e:
                print(e)
@@ -92,4 +107,4 @@ for course in courses:
                logfile.write("There were no submissions found for " + str(user.name) + "\n")
                print("there were no submissions found") 
  assignmentids.write("*\n")
-
+ 
