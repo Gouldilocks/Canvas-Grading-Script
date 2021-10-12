@@ -32,7 +32,6 @@ if not os.path.isdir('./Data'):
 assignmentids = open("dontEditMe.txt", "w")
 
 students = []
- # Change student names here. Names must be capitalized first and last with space betweein like so:
 studentFile = open('students.txt', 'r')
 for line in studentFile:
   line = line.rstrip('\n')
