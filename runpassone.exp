@@ -33,7 +33,7 @@ sleep .1
 send -- "R\r"
 sleep .1
  set NUM 0
- while { $NUM <= 10 } {
+ while { $NUM <= 30 } {
  send -- "P\r"
  sleep .1
  send -- "P\r"
