@@ -102,10 +102,13 @@ for dire in ./Data/*/; do
 				y=${filename%.java}
 				# run the expect script and output to file in subdirectory
 				echo "------------------------------" >> output.txt
-				echo "Running expect on $y: " >> output.txt
+				echo "Running magic8ball expect on $y: " >> output.txt
 				echo "------------------------------" >> output.txt
-				$fullDir/security.exp $y >> output.txt
-				
+				$fullDir/magic8ball.exp $y >> output.txt
+			        echo "------------------------------" >> output.txt
+                                echo "Running runpassone expect on $y: " >> output.txt
+                                echo "------------------------------" >> output.txt
+                                $fullDir/runpassone.exp $y >> output.txt	
 		done # end inner for loop
 		
 		# get out of the subdirectory and go back to home directory
