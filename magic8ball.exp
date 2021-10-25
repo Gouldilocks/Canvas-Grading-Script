@@ -13,14 +13,14 @@ set timeout 5
 spawn java $filename
 match_max 100000
 sleep .1
-send -- "This is the first question?"
+send -- "This is the first question?\r"
 sleep .1
-send -- "This is the second question"
+send -- "This is the second question\r"
 sleep .1
-send -- "This is the third question?"
+send -- "This is the third question?\r"
 sleep .1
-send -- "This is the final question?"
+send -- "This is the final question?\r"
 sleep .1
-send -- ""
+send -- "\r"
 sleep .1
 expect eof

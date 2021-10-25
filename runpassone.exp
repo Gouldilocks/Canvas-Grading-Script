@@ -20,43 +20,45 @@ set timeout 5
 spawn java $filename
 match_max 100000
 sleep .1
-send -- "This is the start of lower cases: This should fail"
+send -- "This is the start of lower cases: This should fail\r"
 sleep .1
-send -- "p"
+send -- "p\r"
 sleep .1
-send -- "r"
+send -- "r\r"
 sleep .1
-send -- "This is the start of the upper cases:"
+send -- "This is the start of the upper cases:\r"
 sleep .1
-send -- "P"
+send -- "P\r"
 sleep .1
-send -- "R"
+send -- "R\r"
 sleep .1
  set NUM 0
  while { $NUM <= 10 } {
- send -- "P"
+ send -- "P\r"
  sleep .1
- send -- "P"
+ send -- "P\r"
  sleep .1
- send -- "R"
+ send -- "R\r"
  sleep .1
- send -- "R"
+ send -- "R\r"
  sleep .1
- send -- "R"
+ send -- "R\r"
  sleep .1
- send -- "p"
+ send -- "p\r"
  sleep .1
- send -- "p"
+ send -- "p\r"
  sleep .1
- send -- "r"
+ send -- "r\r"
  sleep .1
- send -- "r"
+ send -- "r\r"
  sleep .1
- send -- "r"
+ send -- "r\r"
  
  set NUM [myfunc $NUM]
  
  }
-send -- ""
+send -- "q\r"
+sleep .1
+send -- "Q\r"
 sleep .1
 expect eof
