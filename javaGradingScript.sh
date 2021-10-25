@@ -83,7 +83,6 @@ for dire in ./Data/*/; do
 					mv $javafile ..
 					done
 					cd ..
-					rm -rf ./*/
 				fi	
 			
 			# loop over all launcher .java file
