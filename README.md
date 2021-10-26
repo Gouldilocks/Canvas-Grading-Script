@@ -1,9 +1,12 @@
-# Christian's Java Grading Script
+# Christian Gould's Java Grading Script
 
 ## Recent Updates
-OCTOBER 7, 2021
 
-### UPDATE VER 2.0
+### UPDATE VER 2.1 - OCTOBER 25, 2021
+- Update for support for Lab 4 grading
+
+### MAJOR UPDATE VER 2.0 - OCTOBER 7, 2021
+- Update for support for Lab 3 grading
 Currently, the update for canvas api integration has been added. If you choose not to use it, then ignore this and use the script like usual.
 This is how to use the new update:
 - You must get an api key from your canvas page. 
@@ -14,11 +17,16 @@ This is how to use the new update:
 - Give it a purpose / expiration date
 - Hit generate and copy the token to your clipboard
 - Now enter the directory where you store javaGradingScript.sh
-- Create a .txt file named: "apiKey.txt"
-- Go into canvasStudentSubmissionPuller.py and edit the student names to be the names of your student
+- edit the .txt file named: "apiKey.txt", and paste your access token and save
+- Go into students.txt and edit the student names to be the names of your students
 - edit assignmentToGrade to be the assignment you would like to grade
 - now run the script and wait.
 - NOTE: there is not edge-case support for students that do not follow the format of putting all their .java files into a SINGLE zipped folder. That will come soon.
+- If your students do not follow that process, run canvasStudentSubmissionPuller.py and then fix their directories. Then remove this from javaGradingScript.sh:
+```
+# call the python canvas puller
+python3 canvasStudentSubmissionPuller.py
+```
 
 New dependencies for the script are for python if you choose to use the canvas api portion. To install them, use these commands:
 ```
@@ -28,7 +36,7 @@ pip install wget
 pip install canvasapi
 ```
 
-SEPTEMBER
+### UPDATE 1.9 - SEPTEMBER 20, 2021
 The most recent update adds support for Lab 2 for the fall semester.
 
 The thing to look out for is that, because students will change the .java file names, there can be no assumptions made.
