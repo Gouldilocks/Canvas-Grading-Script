@@ -4,6 +4,8 @@
 
 ### UPDATE VER 2.1 - OCTOBER 25, 2021
 - Update for support for Lab 4 grading
+- Because students will name their files different things, this will run the inputs for magic 8 ball and for passrun on all 3 of the java files. This means some of the outputs will be weird, so simply look for when the expect script name lines up with the student's java file name, and skip over weird outputs.
+
 
 ### MAJOR UPDATE VER 2.0 - OCTOBER 7, 2021
 - Update for support for Lab 3 grading
