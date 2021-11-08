@@ -15,45 +15,33 @@ proc myfunc { TOTAL } {
 	return "$TOTAL"
 
 }
+
 set filename [lindex $argv 0]
 set timeout 5
 spawn java $filename
 match_max 100000
 sleep .1
-send -- "This is the start of lower cases: This should fail\r"
+send -- "This script runs P then p, and R then r"
+sleep .1
+send -- "The statement here and the statement above should fail"
+sleep .1
+
+ set NUM 0
+ while { $NUM <= 50 } {
+ 
+send -- "P\r"
 sleep .1
 send -- "p\r"
 sleep .1
-send -- "r\r"
+send -- "R\r"
 sleep .1
-send -- "This is the start of the upper cases:\r"
+send -- "r\r"
 sleep .1
 send -- "P\r"
 sleep .1
 send -- "R\r"
 sleep .1
- set NUM 0
- while { $NUM <= 30 } {
- send -- "P\r"
- sleep .1
- send -- "P\r"
- sleep .1
- send -- "R\r"
- sleep .1
- send -- "R\r"
- sleep .1
- send -- "R\r"
- sleep .1
- send -- "p\r"
- sleep .1
- send -- "p\r"
- sleep .1
- send -- "r\r"
- sleep .1
- send -- "r\r"
- sleep .1
- send -- "r\r"
- 
+
  set NUM [myfunc $NUM]
  
  }

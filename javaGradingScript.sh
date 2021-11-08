@@ -100,15 +100,12 @@ for dire in ./Data/*/; do
 			
 				# remove all exterior except class name (i.e. turn "./Grade.java" to "Grade"
 				y=${filename%.java}
+
 				# run the expect script and output to file in subdirectory
-				echo "------------------------------" >> output.txt
-				echo "Running magic8ball expect on $y: " >> output.txt
-				echo "------------------------------" >> output.txt
-				$fullDir/magic8ball.exp $y >> output.txt
 			        echo "------------------------------" >> output.txt
-                                echo "Running runpassone expect on $y: " >> output.txt
+                                echo "Running football scrimmage expect on $y: " >> output.txt
                                 echo "------------------------------" >> output.txt
-                                $fullDir/runpassone.exp $y >> output.txt	
+                                $fullDir/footballscrimmage.exp $y >> output.txt	
 		done # end inner for loop
 		
 		# get out of the subdirectory and go back to home directory
