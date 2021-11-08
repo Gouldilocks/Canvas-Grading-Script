@@ -17,31 +17,42 @@ proc myfunc { TOTAL } {
 }
 
 set filename [lindex $argv 0]
-set timeout -1
+set timeout 1
 spawn java $filename
 match_max 100000
 # Send the first Team's name
 send -- "FirstTeamName\n"
+sleep .01
 # Send the second Team's name
 send -- "SecondTeamName\n"
+sleep .01
 # Send the number of rounds
 send -- "3\n"
+sleep .01
 
  set NUM 0
  while { $NUM <= 50 } {
  
 send -- "P\n"
+sleep .01
 send -- "p\n"
+sleep .01
 send -- "R\n"
+sleep .01
 send -- "r\n"
+sleep .01
 
  set NUM [myfunc $NUM]
  
  }
 
 send -- "q\n"
+sleep .01
 send -- "Q\n"
+sleep .01
 send -- "q\n"
+sleep .01
 send -- "Q\n"
+sleep .01
 
  expect eof
