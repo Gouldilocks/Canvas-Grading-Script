@@ -12,6 +12,7 @@ python3 canvasStudentSubmissionPuller.py
 
 # use the directory stack to get to ./Data/
 cd ./Data/
+	echo "Un-Zipping .zip files now"
 	# for all .zip files in the current directory
 	for zip in *.zip
 	do
@@ -24,7 +25,7 @@ cd ./Data/
 	    if cd "$dirname"
 	    then
 	      # unzip the file and then leave the directory it zips to
-	      unzip ../"$zip"
+	      unzip ../"$zip" >> logging.txt
 	      cd ..
 	      # delete the old .zip file just to save space on user's computer
 	      rm -f $zip
@@ -37,7 +38,8 @@ cd ./Data/
 	    echo "Could not unpack $zip - mkdir failed"
 	  fi
 	done
-	
+
+	echo "Un-Raring .rar files now"
 	# do the same for .rar files
 	# for all .zip files in the current directory
 	for rar in *.rar
@@ -51,7 +53,7 @@ cd ./Data/
 	    if cd "$dirname"
 	    then
 	      # unzip the file and then leave the directory it zips to
-	      unrar e ../"$rar"
+	      unrar e ../"$rar" >> logging.txt
 	      cd ..
 	      # delete the old .zip file just to save space on user's computer
 	      rm -f $rar

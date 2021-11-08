@@ -21,9 +21,14 @@ set timeout 5
 spawn java $filename
 match_max 100000
 sleep .1
-send -- "This script runs P then p, and R then r"
+# Send the first Team's name
+send -- "FirstTeamName\r"
 sleep .1
-send -- "The statement here and the statement above should fail"
+# Send the second Team's name
+send -- "SecondTeamName\r"
+sleep .1
+# Send the number of rounds
+send -- "3\r"
 sleep .1
 
  set NUM 0
@@ -49,4 +54,5 @@ send -- "q\r"
 sleep .1
 send -- "Q\r"
 sleep .1
+
 expect eof
