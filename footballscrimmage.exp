@@ -22,37 +22,49 @@ spawn java $filename
 match_max 100000
 # Send the first Team's name
 send -- "FirstTeamName\n"
-sleep .01
+sleep .1
 # Send the second Team's name
 send -- "SecondTeamName\n"
-sleep .01
+sleep .1
 # Send the number of rounds
 send -- "3\n"
-sleep .01
+sleep .1
 
  set NUM 0
- while { $NUM <= 50 } {
+ while { $NUM <= 150 } {
  
-send -- "P\n"
-sleep .01
-send -- "p\n"
-sleep .01
-send -- "R\n"
-sleep .01
-send -- "r\n"
-sleep .01
+send -- "P\r"
+sleep .1
+send -- "R\r"
+sleep .1
+send -- "K\r"
+sleep .1
 
  set NUM [myfunc $NUM]
  
  }
 
-send -- "q\n"
-sleep .01
-send -- "Q\n"
-sleep .01
-send -- "q\n"
-sleep .01
-send -- "Q\n"
-sleep .01
+set NUM 0
+while {$NUM <= 100} {
+
+send -- "p\r"
+sleep .1
+send -- "r\r"
+sleep .1
+send -- "k\r"
+sleep .1
+
+set NUM [myfunc $NUM]
+
+}
+
+send -- "q\r"
+sleep .1
+send -- "q\r"
+sleep .1
+send -- "Q\r"
+sleep .1
+send -- "Q\r"
+sleep .1
 
  expect eof
