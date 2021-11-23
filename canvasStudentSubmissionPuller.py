@@ -40,7 +40,7 @@ print("grading these students:")
 print("-----------------------")
 for i in students:
   print(i)
-assignmentToGrade = 'Lab 6'
+assignmentToGrade = 'Lab 7'
 
 # Create a canvas object
 canvas = Canvas(API_URL, API_KEY)
