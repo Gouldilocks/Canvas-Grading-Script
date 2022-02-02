@@ -1,6 +1,8 @@
 # Christian Gould's Java Grading Script
 
 ## Recent Updates
+### UPDATE VER 3.0 - FEBRUARY 2, 2022
+- Created java Grading branch independent of other implementation
 ### UPDATE VER 2.2 - NOVEMBER 8, 2021
 - Update for support for Lab 5 grading
 
