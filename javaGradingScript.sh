@@ -105,9 +105,9 @@ for dire in ./Data/*/; do
 
 				# run the expect script and output to file in subdirectory
 			        echo "------------------------------" >> output.txt
-                                echo "Running football scrimmage expect on $y: " >> output.txt
-                                echo "------------------------------" >> output.txt
-                                $fullDir/footballscrimmage.exp $y >> output.txt	
+							echo "Running football scrimmage expect on $y: " >> output.txt
+							echo "------------------------------" >> output.txt
+							$fullDir/footballscrimmage.exp $y >> output.txt	
 		done # end inner for loop
 		
 		# get out of the subdirectory and go back to home directory
