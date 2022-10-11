@@ -1,4 +1,5 @@
 from canvasapi import Canvas, account
+from helperFunctions import get_courses, get_courses_to_grade_names
 # Script used to more quickly enter grades for students.
 # Prints the user's output to the screen, takes input on grade and comments, and uploads them to canvas.
 
@@ -14,7 +15,8 @@ account = canvas.get_current_user()
 
 assignmentFile = open('dontEditMe.txt','r')
 
-courses = [canvas.get_course(88098),canvas.get_course(88136),canvas.get_course(88117),canvas.get_course(88140)]
+courseNames = get_courses_to_grade_names()
+courses = get_courses(courseNames, canvas)
 # Get an assignment
 studentName = None
 for course in courses: # loop over all 4 assignments from the 4 classes
@@ -35,12 +37,12 @@ for course in courses: # loop over all 4 assignments from the 4 classes
             print(studentName + "'s Project has already been graded. Skipping.")
             students.append(studentName + ' grade: ' + str(submission.score))
             continue
-          filepath = './Data/' + studentName.replace(" ", "") + '/output.txt'
+          # Run all the programs of that student
+          filepath = './Data/' + studentName.replace(" ", "") # Path to the student's folder
           try:
-            output = open(filepath,'r')
-            for l in output:
-              l = l.rstrip('\n')
-              print(l)
+            # Run the students programs
+            run_all_programs(filepath)
+
             print("You are grading " + studentName)
             print("current grade is: " + str(submission.score))
             comment = input("What comment would you like to give? Type 'skip' to skip: ")
@@ -90,6 +92,3 @@ if(answer == 'y'):
         ungradedStudents[i].edit(submission={'posted_grade':int(grade)})
     else:
       continue
-
-
-
