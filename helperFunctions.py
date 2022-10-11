@@ -37,12 +37,12 @@ def get_student_name(filename):
   return split_by_dot[0]
 
 def changeToRealPath(filepath):
-  return filepath.replace(' ', '\ ')
+  return filepath.replace(' ', '\ ').replace('(', '\(').replace(')', '\)')
 
 # Runs all the python programs in the given directory
 def run_all_python_in_directory(filepath):
   for filename in os.listdir(filepath):
-    print('filename: ' + filename)
+    # print('filename: ' + filename)
     if filename.endswith(".py"):
       print("Running: " + filename)
       os.system("python3 " + changeToRealPath(filepath + filename))
@@ -52,9 +52,14 @@ def run_all_python_in_directory(filepath):
 # call run_all_python_in_directory on all subdirectories
 def run_all_programs(filepath):
   for filename in os.listdir(filepath):
-    # print('filename: ' + filename)
-    if os.path.isdir(filepath + filename):
-      # print('running all programs in: ' + filepath + filename)
-      run_all_python_in_directory(filepath + filename + '/')
-      run_all_programs(filepath + filename + '/')
-  print("done running all programs in directory: " + filepath)
+      if filename.endswith(".py"):
+        print("Running: " + filename)
+        os.system("python3 " + changeToRealPath(filepath + filename))
+        print("Finished running: " + filename)
+        print("")
+      if os.path.isdir(filepath + filename):
+        # print('running all programs in: ' + filepath + filename)
+        run_all_python_in_directory(filepath + filename + '/')
+        run_all_programs(filepath + filename + '/')
+
+# run_all_programs('Data/CristinaFerman/')

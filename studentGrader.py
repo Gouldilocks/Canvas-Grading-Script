@@ -38,7 +38,7 @@ for course in courses: # loop over all 4 assignments from the 4 classes
             students.append(studentName + ' grade: ' + str(submission.score))
             continue
           # Run all the programs of that student
-          filepath = './Data/' + studentName.replace(" ", "") # Path to the student's folder
+          filepath = 'Data/' + studentName.replace(" ", "") + '/' # Path to the student's folder
           try:
             # Run the students programs
             run_all_programs(filepath)
@@ -60,8 +60,8 @@ for course in courses: # loop over all 4 assignments from the 4 classes
               pass
             else:
               submission.edit(submission={'posted_grade':int(score)})
-          except:
-            print("student output was not found for " + studentName)
+          except Exception as e:
+            print("error was: " + str(e))
             ungradedStudents.append(submission)
             ungradedStudentNames.append(studentName)
           students.append(studentName + ' grade: ' + str(submission.score))
