@@ -1,6 +1,16 @@
 # Christian Gould's Java Grading Script
 
 ## Recent Updates
+### MAJOR UPDATE VER 3.0 - October 11, 2022
+- Update to make the script far more python-dependent instead of shell-dependent
+- Update to make the script more user-friendly
+- Update to make the script more robust
+- Update to make the script more extensible, with the addition of a helper function class
+- Update to how the script handles the grading of the homeworks, moving away from expect scripts and instead to direct user input
+  - This choice was made because expect scripts were always buggy and didn't quite work as expected all the time
+- Update to how the script gets the courses, taking an avenue that is far easier to do without code. The names are taken straight from canvas and can be entered in the helperFunctions file
+
+
 ### UPDATE VER 2.2 - NOVEMBER 8, 2021
 - Update for support for Lab 5 grading
 

@@ -1,5 +1,5 @@
 from canvasapi import Canvas, account
-from helperFunctions import get_courses, get_courses_to_grade_names
+from helperFunctions import get_courses, get_courses_to_grade_names, run_all_programs
 # Script used to more quickly enter grades for students.
 # Prints the user's output to the screen, takes input on grade and comments, and uploads them to canvas.
 
